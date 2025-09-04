@@ -8,21 +8,36 @@
     var list = root.querySelector('.splide__list');
     if (!list) return;
 
-  // Cache originals once to avoid accumulation or loss on filter changes
-    var originalSlides = Array.from(list.querySelectorAll(':scope > li.splide__slide')).map(function (li) {
-      return {
-        category: li.getAttribute('data-category') || '',
-        html: li.outerHTML,
-      };
-    });
-
+    var originalSlides = [];
     var splide;
     var progressEl = document.querySelector('.houses .houses-progress-bar');
-  var counterEl = document.querySelector('.houses .houses-footer > span');
+    var counterEl = document.querySelector('.houses .houses-footer > span');
     var timerId = null;
     var startedAt = 0;
     var duration = 3000; // 3 seconds
     var isAuto = false;
+    var isInitialized = false;
+
+    // Escuta quando as casas são renderizadas dinamicamente
+    document.addEventListener('housesRendered', function() {
+      cacheOriginalSlides();
+      if (!isInitialized) {
+        initializeCarousel();
+        isInitialized = true;
+      } else {
+        rebuildWithCategory('casas');
+      }
+    });
+
+    function cacheOriginalSlides() {
+      // Cache originals once to avoid accumulation or loss on filter changes
+      originalSlides = Array.from(list.querySelectorAll(':scope > li.splide__slide')).map(function (li) {
+        return {
+          category: li.getAttribute('data-category') || '',
+          html: li.outerHTML,
+        };
+      });
+    }
 
     function clearTimer() {
       if (timerId) {
@@ -145,8 +160,8 @@
     }
 
     function rebuildWithCategory(category) {
-  setSwitching(true);
-  clearTimer();
+      setSwitching(true);
+      clearTimer();
       if (splide) {
         try { splide.destroy(true); } catch (e) {}
       }
@@ -154,19 +169,28 @@
       mountSplide();
     }
 
-  // Initial state: 'casas' as primary category
-  setSwitching(true);
-  renderCategory('casas');
-    mountSplide();
+    function initializeCarousel() {
+      // Initial state: 'casas' as primary category
+      setSwitching(true);
+      renderCategory('casas');
+      mountSplide();
 
-    // Handle filter clicks with smooth transition
-    filterButtons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var category = btn.getAttribute('data-category');
-        filterButtons.forEach(function (b) { b.classList.remove('active'); });
-        btn.classList.add('active');
-        rebuildWithCategory(category);
+      // Handle filter clicks with smooth transition
+      filterButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var category = btn.getAttribute('data-category');
+          filterButtons.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          rebuildWithCategory(category);
+        });
       });
-    });
+    }
+
+    // Se as casas já estão carregadas (fallback)
+    if (list.children.length > 0) {
+      cacheOriginalSlides();
+      initializeCarousel();
+      isInitialized = true;
+    }
   });
 })();

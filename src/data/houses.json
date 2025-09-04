@@ -1,0 +1,148 @@
+{
+  "houses": [
+    {
+      "id": 1,
+      "name": "Cajueiro",
+      "category": "casas",
+      "categoryLabel": "/casas",
+      "description": "Casa compacta e funcional com varanda integrada, ideal para quem busca praticidade",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/ba6df773-c6e0-49ea-0c41-65f8a3bc1d00/public",
+      "alt": "fasthomes-cajueiro"
+    },
+    {
+      "id": 2,
+      "name": "Chalé Araucária",
+      "category": "a-frame",
+      "categoryLabel": "/chalé a-frame",
+      "description": "Design icônico em A-frame, conforto térmico e integração com a natureza",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/250bcb65-b6e1-4e69-ae25-684e90957b00/public",
+      "alt": "fasthomes-chale-araucaria"
+    },
+    {
+      "id": 3,
+      "name": "Mulungu",
+      "category": "casas",
+      "categoryLabel": "/casas",
+      "description": "Projeto moderno com ambientes amplos e iluminação natural privilegiada",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/df33b748-1460-46a4-e7cd-e8c9008e9000/public",
+      "alt": "fasthomes-mulungu"
+    },
+    {
+      "id": 4,
+      "name": "Peroba",
+      "category": "casas",
+      "categoryLabel": "/casas",
+      "description": "Planta funcional com acabamentos premium e alta durabilidade",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/ebf4dc80-afe9-463f-e35d-73ede6299200/public",
+      "alt": "fasthomes-peroba"
+    },
+    {
+      "id": 5,
+      "name": "Buriti",
+      "category": "casas",
+      "categoryLabel": "/casas",
+      "description": "Casa térrea com conceito aberto, perfeita para famílias que valorizam convivência",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/c2c98643-0a28-49ca-4b53-e004013ce100/public",
+      "alt": "fasthomes-buriti"
+    },
+    {
+      "id": 6,
+      "name": "Embaúba",
+      "category": "casas",
+      "categoryLabel": "/casas",
+      "description": "Arquitetura contemporânea com suíte master e área gourmet integrada",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/a76ababe-8ade-48a8-5da4-5f6b9a1f8500/public",
+      "alt": "fasthomes-embauba"
+    },
+    {
+      "id": 7,
+      "name": "Bromélia",
+      "category": "casas",
+      "categoryLabel": "/casas",
+      "description": "Casa elegante de dois pavimentos com acabamentos sofisticados e varanda panorâmica",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/02f08233-7e8a-4a6a-a60d-5445e23d2700/public",
+      "alt": "fasthomes-bromelia"
+    },
+    {
+      "id": 8,
+      "name": "Pitanga",
+      "category": "casas",
+      "categoryLabel": "/casas",
+      "description": "Projeto aconchegante com três dormitórios e área de lazer coberta",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/3e70bc9f-e447-4515-13e5-1a30f095c600/public",
+      "alt": "fasthomes-pitanga"
+    },
+    {
+      "id": 9,
+      "name": "Jatobá",
+      "category": "casas",
+      "categoryLabel": "/casas",
+      "description": "Casa robusta com estrutura reforçada, ideal para terrenos desafiadores",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/3e70bc9f-e447-4515-13e5-1a30f095c600/public",
+      "alt": "fasthomes-jatoba"
+    },
+    {
+      "id": 10,
+      "name": "Pau-Brasil",
+      "category": "casas",
+      "categoryLabel": "/casas",
+      "description": "Design clássico brasileiro com ampla sala de estar e cozinha gourmet",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/ead501a2-a972-45bf-b4a1-81b7e4b41000/public",
+      "alt": "fasthomes-pau-brasil"
+    },
+    {
+      "id": 11,
+      "name": "Manacá",
+      "category": "casas",
+      "categoryLabel": "/casas",
+      "description": "Casa charmosa com jardim interno e aproveitamento máximo da luz solar",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/6b9bb61e-5705-4e55-1c7d-d96ba400d700/public",
+      "alt": "fasthomes-manaca"
+    },
+    {
+      "id": 12,
+      "name": "Jequitibá",
+      "category": "casas",
+      "categoryLabel": "/casas",
+      "description": "Residência espaçosa com quatro quartos e escritório home office integrado",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/125e075c-01b0-4341-29ce-7d2514099800/public",
+      "alt": "fasthomes-jequitiba"
+    },
+    {
+      "id": 13,
+      "name": "Mandacaru",
+      "category": "modulares",
+      "categoryLabel": "/modulares",
+      "description": "Módulo inicial expansível, perfeito para crescer junto com sua família",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/626b83bb-7119-4b16-cc96-3d1f7d21be00/public",
+      "alt": "fasthomes-mandacaru"
+    },
+    {
+      "id": 14,
+      "name": "Bromélia Azul",
+      "category": "modulares",
+      "categoryLabel": "/modulares",
+      "description": "Sistema modular inteligente com possibilidade de ampliação futura",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/2c726118-334e-4b70-900d-32529cbfa600/public",
+      "alt": "fasthomes-bromelia-azul"
+    },
+    {
+      "id": 15,
+      "name": "Capim-limão",
+      "category": "modulares",
+      "categoryLabel": "/modulares",
+      "description": "Módulo compacto e eficiente, ideal para terrenos menores ou casais jovens",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/80818900-6fc4-4eb3-9f09-8f5bcc179600/public",
+      "alt": "fasthomes-capim-limao"
+    },
+    {
+      "id": 16,
+      "name": "Vitória-régia",
+      "category": "modulares",
+      "categoryLabel": "/modulares",
+      "description": "Solução modular premium com design flexível e múltiplas configurações",
+      "image": "https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/f01cb28f-e2fd-477d-ae65-9fc3cff1f800/public",
+      "alt": "fasthomes-vitoria-regia"
+    }
+  ]
+}
