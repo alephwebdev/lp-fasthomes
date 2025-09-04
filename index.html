@@ -1,11 +1,451 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/styles/global.css">
+    <!-- Splide CSS for carousels -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <title>Document</title>
 </head>
+
 <body>
+    <div class="degrade"></div>
+
+    <section class="home">
+        <div class="bg"></div>
+        <main class="home-content">
+            <article class="home-texts">
+                <img src="public/logo-fasthomes-black.svg" alt="logo-marca-fast-homes" loading="eager">
+                <h1>Sua casa com alma, construída para durar</h1>
+                <p>Uma casa que captura sua verdadeira essência, concebida para perdurar através das gerações.</p>
+                <form class="contactForm">
+                    <label for="name">
+                        <span>Digite seu nome</span>
+                        <input type="text" id="name" placeholder="Seu nome completo" required>
+                        <img src="src/assets/icons/user.svg" alt="icon-user" title="nome-do-usuario">
+                    </label>
+                    <label for="email">
+                        <span>Digite seu e-mail</span>
+                        <input type="email" id="email" placeholder="contato@fasthomes.com.br" required>
+                        <img src="src/assets/icons/email.svg" alt="icon-email" title="email-do-usuario">
+                    </label>
+                    <label for="tel">
+                        <span>Digite seu WhatsApp</span>
+                        <input type="tel" id="tel" placeholder="(24) 99999-9999" required>
+                        <img src="src/assets/icons/whatsapp.svg" alt="icon-whatsapp" title="whatsapp-do-usuario">
+                    </label>
+                    <button type="submit">
+                        <span>Falar com um consultor</span>
+                        <img src="src/assets/icons/arrow.svg" alt="icon-arrow" loading="eager">
+                    </button>
+                    <p><b>*</b>Ao entrar em contato você concorda com a nossa <a href="#" target="_blank">politica de
+                            privacidade</a>.</p>
+                </form>
+            </article>
+            <aside class="home-images">
+                <div class="home-content-images--large">
+                    <picture>
+                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/ba6df773-c6e0-49ea-0c41-65f8a3bc1d00/public"
+                            alt="foto-da-casa-cajueiro-da-fast-homes" loading="eager">
+                        <span>Cajueiro</span>
+                    </picture>
+                </div>
+                <div class="home-content-images--small">
+                    <picture>
+                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/a76ababe-8ade-48a8-5da4-5f6b9a1f8500/public"
+                            alt="foto-da-casa-embauba-da-fast-homes" loading="eager">
+                        <span>Embaúba</span>
+                    </picture>
+                    <picture>
+                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/795a497e-4268-40dc-d493-39b6ced14900/public"
+                            alt="foto-da-cabana-araucaria-da-fast-homes" loading="eager">
+                        <span>Cabana Araucária</span>
+                    </picture>
+                </div>
+            </aside>
+        </main>
+    </section>
+
+    <section class="advantage">
+        <div class="bg"></div>
+        <main class="advantage-content">
+            <article class="advantage-header">
+                <h1>Aqui você sempre está em vantagem</h1>
+                <span>Vantagens</span>
+            </article>
+            <aside class="advantage-options">
+                <ol>
+                    <li class="advantage-option">Rapidez</li>
+                    <li class="advantage-option">Obra Limpa</li>
+                    <li class="advantage-option">Sustentabilidade</li>
+                    <li class="advantage-option">Durabilidade</li>
+                    <li class="advantage-option">Sem Imprevisto</li>
+                </ol>
+                <div class="my-slider-progress">
+                    <div class="my-slider-progress-bar"></div>
+                </div> <!-- Colocar a barra de progress aqui -->
+            </aside>
+            <section class="advantage-carousel">
+                <div class="advantage-carousel-item">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/250bcb65-b6e1-4e69-ae25-684e90957b00/public" alt="" loading="lazy">
+                                <aside>
+                                    <h2>Rapidez na construção</h2>
+                                    <p class="advantage-carousel-item-description">
+                                        O Steel Frame é uma técnica inovadora que proporciona rapidez na construção de edificações.
+                                        Com sua estrutura leve e resistente, permite que as obras sejam erguidas em um tempo
+                                        significativamente menor em comparação aos métodos tradicionais
+                                    </p>
+                                    <button>
+                                        <span>Falar com um consultor</span>
+                                        <img src="src/assets/icons/arrow.svg" alt="icon-arrow" loading="eager">
+                                    </button>
+                                    <p><b>*</b>Ao entrar em contato você concorda com a nossa <a href="#" target="_blank">politica de privacidade</a>.</p>
+                                </aside>      
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="advantage-button-prev" aria-label="Próximo">
+                    <img src="src/assets/icons/arrow.svg" alt="icon-arrow-right" loading="lazy">
+                </button>
+            </section>
+        </main>
+    </section>
+
+    <section class="range">
+        <main class="range-content">
+            <article class="range-carousel-ctas splide" aria-label="Faixa de CTAs">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <span class="range-item-cta">
+                                Converse com um consultor
+                                <img src="src/assets/icons/arrow.svg" alt="icon-arrow-right" loading="eager">
+                            </span>
+                        </li>
+                        <li class="splide__slide">
+                            <span class="range-item-cta">
+                                Converse com um consultor
+                                <img src="src/assets/icons/arrow.svg" alt="icon-arrow-right" loading="eager">
+                            </span>
+                        </li>
+                        <li class="splide__slide">
+                            <span class="range-item-cta">
+                                Converse com um consultor
+                                <img src="src/assets/icons/arrow.svg" alt="icon-arrow-right" loading="eager">
+                            </span>
+                        </li>
+                        <li class="splide__slide">
+                            <span class="range-item-cta">
+                                Converse com um consultor
+                                <img src="src/assets/icons/arrow.svg" alt="icon-arrow-right" loading="eager">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <aside class="range-carousel-images splide" aria-label="Galeria de imagens">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/250bcb65-b6e1-4e69-ae25-684e90957b00/public" alt="" loading="lazy">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/250bcb65-b6e1-4e69-ae25-684e90957b00/public" alt="" loading="lazy">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/250bcb65-b6e1-4e69-ae25-684e90957b00/public" alt="" loading="lazy">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/250bcb65-b6e1-4e69-ae25-684e90957b00/public" alt="" loading="lazy">
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+    </section>
+
+    <section class="about">
+        <div class="bg"></div>
+        <main class="about-content">
+            <article class="about-carousel-images">
+                <div class="about-carousel-item">
+                    <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/795a497e-4268-40dc-d493-39b6ced14900/public" alt="" loading="lazy">
+                    <span>Mulungu</span>
+                </div>
+            </article>
+            <aside class="about-texts">
+                <span>Quem somos</span>
+                <h1>Afinal, quem é a Fast Homes?</h1>
+                <p>Somos uma empresa especializada em habitação, oferecendo lares construídos com a tecnologia mais
+                    moderna e sustentável do momento: o Steel Frame.</p>
+                <ol>
+                    <li>
+                        <img src="src/assets/icons/check.svg" alt="icon-check" loading="lazy">
+                        <p>Mais de 10 anos de experiência em Steel Frame</p>
+                    </li>
+                    <li>
+                        <img src="src/assets/icons/check.svg" alt="icon-check" loading="lazy">
+                        <p>Parceria com a fábrica Nova Metálica</p>
+                    </li>
+                    <li>
+                        <img src="src/assets/icons/check.svg" alt="icon-check" loading="lazy">
+                        <p>Logística e materiais garantidos pela Fast Sistemas</p>
+                    </li>
+                    <li>
+                        <img src="src/assets/icons/check.svg" alt="icon-check" loading="lazy">
+                        <p>Obras rápidas, limpas e sustentáveis</p>
+                    </li>
+                </ol>
+                <button>
+                    <span>Falar com um consultor</span>
+                    <img src="src/assets/icons/arrow.svg" alt="icon-arrow" loading="eager">
+                </button>
+                <p><b>*</b>Ao entrar em contato você concorda com a nossa <a href="" target="_blank">politica de
+                        privacidade</a>.</p>
+            </aside>
+        </main>
+    </section>
+
+    <section class="houses">
+        <div class="bg"></div>
+        <main class="houses-content">
+            <article class="houses-header">
+                <h1>Encontre a casa que melhor te representa</h1>
+                <span>Nossas casas</span>
+            </article>
+            <aside class="houses-options">
+                <ol>
+                    <li class="houses-option active" data-category="casas">Casas</li>
+                    <li class="houses-option" data-category="a-frame">Chalé A-Frame</li>
+                    <li class="houses-option" data-category="modulares">Casas Modulares</li>
+                </ol>
+                <div class="houses-progress">
+                    <div class="houses-progress-bar"></div>
+                </div> <!-- Barra de progresso do carrossel -->
+            </aside>
+            <section class="houses-carousel splide" aria-label="Nossas casas">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide" data-category="casas">
+                            <div class="houses-carousel-item">
+                                <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/a76ababe-8ade-48a8-5da4-5f6b9a1f8500/public" alt="Modelo Pau-Brasil" loading="lazy">
+                                <article>
+                                    <div>
+                                        <h2>Pau-Brasil</h2>
+                                        <span>/casas</span>
+                                    </div>
+                                    <p>Uma casa elegante e moderna, retratando o conceito de liberdade e sofisticação</p>
+                                </article>
+                            </div>
+                        </li>
+                        <li class="splide__slide" data-category="casas">
+                            <div class="houses-carousel-item">
+                                <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/795a497e-4268-40dc-d493-39b6ced14900/public" alt="Chalé Araucária" loading="lazy">
+                                <article>
+                                    <div>
+                                        <h2>Chalé Araucária</h2>
+                                        <span>/chalé a-frame</span>
+                                    </div>
+                                    <p>Design icônico em A-frame, conforto térmico e integração com a natureza</p>
+                                </article>
+                            </div>
+                        </li>
+                        <li class="splide__slide" data-category="modulares">
+                            <div class="houses-carousel-item">
+                                <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/ba6df773-c6e0-49ea-0c41-65f8a3bc1d00/public" alt="Módulo Mulungu" loading="lazy">
+                                <article>
+                                    <div>
+                                        <h2>Mulungu</h2>
+                                        <span>/modulares</span>
+                                    </div>
+                                    <p>Módulos inteligentes, ampliáveis e rápidos de montar para diversas fases de vida</p>
+                                </article>
+                            </div>
+                        </li>
+                        <li class="splide__slide" data-category="casas">
+                            <div class="houses-carousel-item">
+                                <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/250bcb65-b6e1-4e69-ae25-684e90957b00/public" alt="Embaúba" loading="lazy">
+                                <article>
+                                    <div>
+                                        <h2>Embaúba</h2>
+                                        <span>/casas</span>
+                                    </div>
+                                    <p>Planta funcional com acabamentos premium e alta durabilidade</p>
+                                </article>
+                            </div>
+                        </li>
+                        <li class="splide__slide" data-category="a-frame">
+                            <div class="houses-carousel-item">
+                                <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/a76ababe-8ade-48a8-5da4-5f6b9a1f8500/public" alt="A-Frame Ipê" loading="lazy">
+                                <article>
+                                    <div>
+                                        <h2>A-Frame Ipê</h2>
+                                        <span>/chalé a-frame</span>
+                                    </div>
+                                    <p>Estrutura leve em aço galvanizado com experiência aconchegante</p>
+                                </article>
+                            </div>
+                        </li>
+                        <li class="splide__slide" data-category="modulares">
+                            <div class="houses-carousel-item">
+                                <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/250bcb65-b6e1-4e69-ae25-684e90957b00/public" alt="Módulo Jequitibá" loading="lazy">
+                                <article>
+                                    <div>
+                                        <h2>Jequitibá</h2>
+                                        <span>/modulares</span>
+                                    </div>
+                                    <p>Solução modular robusta e escalável, pronta para crescer com você</p>
+                                </article>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <aside class="houses-footer">
+                <div>
+                    <button>
+                        <span>Falar com um consultor</span>
+                        <img src="src/assets/icons/arrow-white.svg" alt="icon-arrow" loading="eager">
+                    </button>
+                    <p><b>*</b>Ao entrar em contato você concorda com a nossa <a href="" target="_blank">politica de
+                            privacidade</a>.</p>
+                </div>
+            </aside>
+        </main>
+    </section>
+
+    <section class="process">
+        <div class="bg"></div>
+        <main class="process-content">
+            <article class="process-header">
+                <span>Processo</span>
+                <h1>Processo completo para a sua casa</h1>
+            </article>
+            <aside class="process-carousel splide" aria-label="Etapas do processo">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="process-carousel-item">
+                                <div class="process-carousel-item-number">
+                                    <span>1</span>
+                                    <div>
+                                        <img src="src/assets/icons/arrow.svg" alt="arrow-icon-left">
+                                    </div>
+                                </div>
+                                <main class="process-carousel-item-texts">
+                                    <h2>Escolha</h2>
+                                    <p>Tudo começa com a escolha do modelo que mais combina com você. Nossos projetos foram pensados
+                                        para atender a diferentes estilos de vida e necessidades. Escolha entre as nossas casas
+                                        prontas ou traga o seu projeto para darmos vida ao lar ideal para você e sua família.</p>
+                                </main>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="process-carousel-item">
+                                <div class="process-carousel-item-number">
+                                    <span>2</span>
+                                    <div>
+                                        <img src="src/assets/icons/arrow.svg" alt="arrow-icon-left">
+                                    </div>
+                                </div>
+                                <main class="process-carousel-item-texts">
+                                    <h2>Planejamento</h2>
+                                    <p>Definimos prazos, materiais e alinhamos cada detalhe para garantir eficiência e qualidade em todas as etapas.</p>
+                                </main>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="process-carousel-item">
+                                <div class="process-carousel-item-number">
+                                    <span>3</span>
+                                    <div>
+                                        <img src="src/assets/icons/arrow.svg" alt="arrow-icon-left">
+                                    </div>
+                                </div>
+                                <main class="process-carousel-item-texts">
+                                    <h2>Produção</h2>
+                                    <p>Com o projeto aprovado, iniciamos a obra com processos limpos, rápidos e sustentáveis em Steel Frame.</p>
+                                </main>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="process-carousel-item">
+                                <div class="process-carousel-item-number">
+                                    <span>4</span>
+                                    <div>
+                                        <img src="src/assets/icons/arrow.svg" alt="arrow-icon-left">
+                                    </div>
+                                </div>
+                                <main class="process-carousel-item-texts">
+                                    <h2>Acabamentos</h2>
+                                    <p>Cuidamos dos últimos detalhes para entregar um resultado impecável, pronto para morar.</p>
+                                </main>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="process-carousel-item">
+                                <div class="process-carousel-item-number">
+                                    <span>5</span>
+                                    <div>
+                                        <img src="src/assets/icons/arrow.svg" alt="arrow-icon-left">
+                                    </div>
+                                </div>
+                                <main class="process-carousel-item-texts">
+                                    <h2>Entrega</h2>
+                                    <p>Seu novo lar, com alma e durabilidade, é entregue dentro do prazo, pronto para viver grandes histórias.</p>
+                                </main>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <article class="process-footer">
+                <button>
+                    <span>Falar com um consultor</span>
+                    <img src="src/assets/icons/arrow.svg" alt="icon-arrow" loading="eager">
+                </button>
+                <p><b>*</b>Ao entrar em contato você concorda com a nossa <a href="" target="_blank">politica de
+                        privacidade</a>.</p>
+            </article>
+        </main>
+    </section>
     
+    <footer class="footer">
+        <div class="bg"></div>
+        <main class="footer-content">
+            <div class="footer-line"></div>
+            <article class="footer-texts">
+                <p>Todos os direitos reservados | CNPJ: 40.436.034/0001-48 | Fast Homes</p>
+                <p>Desenvolvido por <a href="https://alephsramos.com.br" target="_blank"><img
+                            src="src/assets/icons/icon-aleph-desenvolvedor-web.svg" alt="logo-aleph-desenvolvedor-web"
+                            loading="eager"></a></p>
+            </article>
+        </main>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="src/scripts/degrade.js"></script>
+    <script src="src/scripts/form.js"></script>
+    <!-- Splide core and AutoScroll extension -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <!-- Range marquee init -->
+    <script src="src/scripts/range-marquee.js"></script>
+    <!-- Range images slider init -->
+    <script src="src/scripts/range-images-carousel.js"></script>
+    <!-- Process slider init -->
+    <script src="src/scripts/process-carousel.js"></script>
+    <!-- Houses slider with filters init -->
+    <script src="src/scripts/houses-carousel.js"></script>
+    <!-- Advantage simple carousel (custom, no Splide) -->
+    <script src="src/scripts/advantage-carousel.js"></script>
 </body>
+
 </html>

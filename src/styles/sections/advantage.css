@@ -1,0 +1,196 @@
+.advantage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+
+    & > .bg {
+        position: absolute;
+        background-color: #fbfbfb;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+    & .advantage-content {
+        width: 100%;
+        max-width: 1420px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2.5% 5%;
+        gap: 50px;
+        position: relative;
+        z-index: 1;
+
+        @media (max-width: 768px){
+            gap: 20px;    
+        }
+
+        & .advantage-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            @media (max-width: 768px){
+                flex-direction: column-reverse;
+                justify-content: center;
+                gap: 20px;
+                align-items: flex-start;
+            }
+
+            & h1 {
+                font-size: 42px;
+                width: 50%;
+                line-height: 1;
+                font-weight: 200;
+
+                @media (max-width: 768px){
+                    width: 100%;
+                    font-size: 36px;
+                }
+            }
+
+            & span {
+                font-size: 20px;
+                padding: 10px 15px;
+                border: 1px solid #1d1d1b;
+                border-radius: 50px;
+                color: #1d1d1b;
+            }
+        }
+
+        & .advantage-options {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (max-width: 768px){
+                display: none;
+            }
+
+            & ol {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+
+                @media (max-width: 768px){
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    gap: 5px;
+                }
+
+                & .advantage-option {
+                    border: 1px solid #1d1d1b;
+                    padding: 10px 15px;
+                    border-radius: 50px;
+                    font-size: 18px;
+                    cursor: pointer;
+
+                    &.active {
+                        background-color: #1d1d1b;
+                        color: #fbfbfb;
+                    }
+                }
+            }
+
+            /* Minimal progress bar styling */
+            & .my-slider-progress {
+                flex: 1;
+                height: 3px;
+                background: #e6e6e6;
+                border-radius: 2px;
+                margin-left: 20px;
+                overflow: hidden;
+            }
+
+            & .my-slider-progress-bar {
+                height: 100%;
+                width: 0;
+                background: #1d1d1b;
+                transition: width 300ms ease;
+            }
+        }
+
+        & .advantage-carousel {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            height: auto;
+            gap: 100px;
+
+            @media (max-width: 768px){
+                flex-direction: column-reverse;
+                gap: 20px;
+                align-items: center;
+            }
+
+            & .advantage-carousel-item {
+
+                .splide__track {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 400px;
+
+                    @media (max-width: 768px){
+                        height: auto;
+                    }
+                    /* No overflow masking needed when not animating */
+
+                    & .splide__list {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: row;
+
+                        & .splide__slide {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            gap: 10px;
+                            height: 100%;
+
+                            @media (max-width: 768px){
+                                flex-direction: column;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .advantage-button-prev {
+                width: 100px;
+                height: auto;
+                color: #1d1d1b;
+
+                @media (max-width: 768px){
+                    width: 50px;
+                }
+            }
+
+            & > span {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                font-size: 18px;
+                font-weight: 300;
+                color: #1d1d1b;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Styles */
+@import url('../styles/reset.css');
+@import url('../styles/variables.css');
+
+/* Sections Styles */
+@import url('../styles/sections/home.css');
+@import url('../styles/sections/advantage.css');
+@import url('../styles/sections/range.css');
+@import url('../styles/sections/about.css');
+@import url('../styles/sections/houses.css');
+@import url('../styles/sections/proccess.css');
+@import url('../styles/sections/footer.css');
+
+/* Components Styles */
+@import url('../components/advantageCard.css');
+@import url('../components/houseCard.css');
+@import url('../components/processCard.css');
+@import url('../components/degrade.css');

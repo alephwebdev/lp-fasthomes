@@ -1,0 +1,18 @@
+.degrade {
+    /* fixed bottom overlay with soft white gradient + blur */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100px;
+    pointer-events: none;
+    /* don't block clicks */
+    z-index: 3;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    transition: background 200ms ease;
+}
+
+/* dark variant used when the overlay is over a dark section */
+.degrade.degrade--dark {
+    background: linear-gradient(180deg, rgba(29, 29, 27, 0) 0%, #1d1d1b 100%);
+}
