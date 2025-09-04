@@ -1,0 +1,181 @@
+/* AOS Custom Animations and Overrides */
+
+/* Custom animation durations and easing */
+[data-aos][data-aos][data-aos-duration="800"] {
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+[data-aos][data-aos][data-aos-duration="1000"] {
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Enhanced fade animations */
+[data-aos="fade-up"] {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+}
+
+[data-aos="fade-up"].aos-animate {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+[data-aos="fade-down"] {
+    transform: translate3d(0, -40px, 0);
+    opacity: 0;
+}
+
+[data-aos="fade-down"].aos-animate {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+[data-aos="fade-right"] {
+    transform: translate3d(-40px, 0, 0);
+    opacity: 0;
+}
+
+[data-aos="fade-right"].aos-animate {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+[data-aos="fade-left"] {
+    transform: translate3d(40px, 0, 0);
+    opacity: 0;
+}
+
+[data-aos="fade-left"].aos-animate {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+/* Enhanced zoom animations */
+[data-aos="zoom-in"] {
+    transform: scale3d(0.8, 0.8, 1);
+    opacity: 0;
+}
+
+[data-aos="zoom-in"].aos-animate {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+}
+
+/* Smooth stagger effects for lists */
+.advantage-options ol li,
+.houses-options ol li,
+.about-texts ol li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.advantage-options ol li.aos-animate,
+.houses-options ol li.aos-animate,
+.about-texts ol li.aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Form field animations */
+.contactForm label {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.contactForm label.aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Progressive image loading with fade */
+img {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+img.loaded,
+img[loading="eager"] {
+    opacity: 1;
+}
+
+/* Subtle parallax effect for background elements */
+.bg {
+    transform: translateZ(0);
+    transition: transform 0.1s ease-out;
+}
+
+/* Enhanced button interactions */
+button {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease-in-out;
+}
+
+button:hover::before {
+    left: 100%;
+}
+
+/* Carousel smooth transitions */
+.splide__slide {
+    transition: all 0.4s ease-in-out;
+}
+
+.splide__slide.is-active {
+    transform: scale(1.02);
+}
+
+/* Loading animation for form submission */
+.contactForm.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.contactForm.loading button {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive animation adjustments */
+@media (prefers-reduced-motion: reduce) {
+    [data-aos] {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    * {
+        transition: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    [data-aos] {
+        transform: none !important;
+        opacity: 1 !important;
+    }
+}

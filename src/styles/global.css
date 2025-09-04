@@ -19,3 +19,18 @@
 @import url('../components/houseCard.css');
 @import url('../components/processCard.css');
 @import url('../components/degrade.css');
+
+/* AOS Animation Styles */
+[data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}

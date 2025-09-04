@@ -105,6 +105,8 @@ section {
 body {
     line-height: 1;
     font-family: 'Urbanist', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 ol,

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="src/styles/global.css">
     <!-- Splide CSS for carousels -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!-- AOS CSS for animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -17,7 +19,7 @@
     <section class="home">
         <div class="bg"></div>
         <main class="home-content">
-            <article class="home-texts">
+            <article class="home-texts" data-aos="fade-right" data-aos-duration="1000">
                 <img src="public/logo-fasthomes-black.svg" alt="logo-marca-fast-homes" loading="eager">
                 <h1>Sua casa com alma, construída para durar</h1>
                 <p>Uma casa que captura sua verdadeira essência, concebida para perdurar através das gerações.</p>
@@ -45,7 +47,7 @@
                             privacidade</a>.</p>
                 </form>
             </article>
-            <aside class="home-images">
+            <aside class="home-images" data-aos="fade-left" data-aos-duration="1000">
                 <div class="home-content-images--large">
                     <picture>
                         <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/ba6df773-c6e0-49ea-0c41-65f8a3bc1d00/public"
@@ -72,11 +74,11 @@
     <section class="advantage">
         <div class="bg"></div>
         <main class="advantage-content">
-            <article class="advantage-header">
+            <article class="advantage-header" data-aos="fade-up" data-aos-duration="800">
                 <h1>Aqui você sempre está em vantagem</h1>
                 <span>Vantagens</span>
             </article>
-            <aside class="advantage-options">
+            <aside class="advantage-options" data-aos="fade-right" data-aos-delay="200">
                 <ol>
                     <li class="advantage-option">Rapidez</li>
                     <li class="advantage-option">Obra Limpa</li>
@@ -88,7 +90,7 @@
                     <div class="my-slider-progress-bar"></div>
                 </div> <!-- Colocar a barra de progress aqui -->
             </aside>
-            <section class="advantage-carousel">
+            <section class="advantage-carousel" data-aos="fade-left" data-aos-delay="400">
                 <div class="advantage-carousel-item">
                     <div class="splide__track">
                         <ul class="splide__list">
@@ -120,7 +122,7 @@
 
     <section class="range">
         <main class="range-content">
-            <article class="range-carousel-ctas splide" aria-label="Faixa de CTAs">
+            <article class="range-carousel-ctas splide" aria-label="Faixa de CTAs" data-aos="fade-up" data-aos-duration="800">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
@@ -150,7 +152,7 @@
                     </ul>
                 </div>
             </article>
-            <aside class="range-carousel-images splide" aria-label="Galeria de imagens">
+            <aside class="range-carousel-images splide" aria-label="Galeria de imagens" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
@@ -174,13 +176,13 @@
     <section class="about">
         <div class="bg"></div>
         <main class="about-content">
-            <article class="about-carousel-images">
+            <article class="about-carousel-images" data-aos="fade-right" data-aos-duration="1000">
                 <div class="about-carousel-item">
                     <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/795a497e-4268-40dc-d493-39b6ced14900/public" alt="" loading="lazy">
                     <span>Mulungu</span>
                 </div>
             </article>
-            <aside class="about-texts">
+            <aside class="about-texts" data-aos="fade-left" data-aos-duration="1000">
                 <span>Quem somos</span>
                 <h1>Afinal, quem é a Fast Homes?</h1>
                 <p>Somos uma empresa especializada em habitação, oferecendo lares construídos com a tecnologia mais
@@ -216,11 +218,11 @@
     <section class="houses">
         <div class="bg"></div>
         <main class="houses-content">
-            <article class="houses-header">
+            <article class="houses-header" data-aos="fade-up" data-aos-duration="800">
                 <h1>Encontre a casa que melhor te representa</h1>
                 <span>Nossas casas</span>
             </article>
-            <aside class="houses-options">
+            <aside class="houses-options" data-aos="fade-up" data-aos-delay="200">
                 <ol>
                     <li class="houses-option active" data-category="casas">Casas</li>
                     <li class="houses-option" data-category="a-frame">Chalé A-Frame</li>
@@ -230,7 +232,7 @@
                     <div class="houses-progress-bar"></div>
                 </div> <!-- Barra de progresso do carrossel -->
             </aside>
-            <section class="houses-carousel splide" aria-label="Nossas casas">
+            <section class="houses-carousel splide" aria-label="Nossas casas" data-aos="fade-up" data-aos-delay="400">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide" data-category="casas">
@@ -324,11 +326,11 @@
     <section class="process">
         <div class="bg"></div>
         <main class="process-content">
-            <article class="process-header">
+            <article class="process-header" data-aos="fade-up" data-aos-duration="800">
                 <span>Processo</span>
                 <h1>Processo completo para a sua casa</h1>
             </article>
-            <aside class="process-carousel splide" aria-label="Etapas do processo">
+            <aside class="process-carousel splide" aria-label="Etapas do processo" data-aos="fade-up" data-aos-delay="400">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
@@ -406,7 +408,7 @@
                     </ul>
                 </div>
             </aside>
-            <article class="process-footer">
+            <article class="process-footer" data-aos="fade-up" data-aos-delay="400">
                 <button>
                     <span>Falar com um consultor</span>
                     <img src="src/assets/icons/arrow.svg" alt="icon-arrow" loading="eager">
@@ -431,6 +433,10 @@
     </footer>
 
     <!-- Scripts -->
+    <!-- AOS JavaScript for animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS Initialization -->
+    <script src="src/scripts/aos-init.js"></script>
     <script src="src/scripts/degrade.js"></script>
     <script src="src/scripts/form.js"></script>
     <!-- Splide core and AutoScroll extension -->
