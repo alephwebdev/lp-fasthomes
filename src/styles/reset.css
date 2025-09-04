@@ -102,7 +102,7 @@ section {
     display: block;
 }
 
-body {
+body, html {
     line-height: 1;
     font-family: 'Urbanist', sans-serif;
     width: 100%;
